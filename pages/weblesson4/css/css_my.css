@@ -1,0 +1,174 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+    background-image: url(../img/fon.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    min-height: 1300px;
+    color: white;
+}
+
+header {
+	min-height: 100px;
+	display: flex;
+	justify-content: space-between;	
+}
+.logo {
+	width: 100px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logo img {
+	width:80%;
+}
+.contact-info {
+	width: 60%;
+}
+.contact-info {
+	display: flex;
+}
+.contact-info div {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:#006400;
+	min-width: 200px;
+	flex-wrap: wrap; 
+}
+/*.menu {
+	background-color: #adff2f;
+}*/
+.menu ul {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	flex: 1;
+}
+.menu a {
+	margin: 10px auto; 
+	width:85%;
+	display: block;
+	border:2px solid white;
+	/*border-right:2px solid green;*/
+    text-decoration: none;
+    background-color:#adff2f;
+    color:green;
+    padding: 10px;
+    border-radius: 10px;	
+    text-align: center;
+}
+.menu a:hover {
+ background-color: #cf0;
+ color:green;
+
+}
+.menu a:hover::before, .menu a:hover::after{
+	/*content:"hello";-добавляет слово в список*/
+	content:"";
+	width: 20px;
+	height: 2px;
+    background: green;
+	display: inline-block;
+	vertical-align: middle;
+    margin: 0 5px;
+}/*важно: черточки возле слов в меню*/
+.ci-adress::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content:"\f641";
+	padding-right: 8px;
+	font-size:20px;
+	color:#006400;
+
+}
+.ci-phone::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content:"\f3cd";
+	padding-right: 8px;
+	font-size:20px;
+	color:#006400;
+}
+.ci-mail::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content:"\f199";
+	padding-right: 8px;
+	font-size:20px;
+	color:#006400;
+}
+#banner {
+	min-height: 500px;
+	border: 2px solid green;
+	/*background-color:rgba(255,255,255,0.2);-white*/
+	background-color:rgba(51,204,204,0.3);
+	background-position: cover;
+	margin:30px;
+	display: flex;
+	justify-content: center;	
+}
+/*.banner-text .header{
+ text-transform: uppercase;
+ padding-top: 20px;
+ padding-bottom: 80px;
+ font-size: 2em;
+}
+.banner-text .s-h h1 {
+ text-align: center;
+}
+.banner-text h1::before, .banner-text h1::after{
+	/*content:"hello";-добавляет слово в список
+	content:"";
+	width: 20px;
+	height: 2px;
+    background: green;
+	display: inline-block;
+	vertical-align: middle;
+    margin: 0 5px;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+ .menu ul {
+ 	display: flex;
+ }
+ .menu li {
+ 	flex:1;
+ }
+}
